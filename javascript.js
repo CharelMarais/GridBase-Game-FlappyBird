@@ -213,6 +213,9 @@ function winLoseCheck() {
         clearInterval(winLoseCheckTickSpeedSet);
         clearInterval(generateWallTickSpeedSet);
         clearInterval(scoreUpdateTickSpeedSet);
+
+        const boxToChange = document.getElementById(`boxR${r + 1}C${c + 1}`);
+        boxToChange.style.backgroundColor = grid[r][c] ? 'red' : 'red';
         gameState = 3;
       }
     }
