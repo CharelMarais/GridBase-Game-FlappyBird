@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>8-bit Flappy Bird - CM</title>
+    <link
+      rel="stylesheet"
+      href="./styles.css" />
+    <script
+      src="./grid.js"
+      type="text/javascript"
+      defer></script>
+    <script
+      src="./javascript.js"
+      type="text/javascript"
+      defer></script>
+  </head>
+  <body onkeydown="keypressValidationMovement()">
+    <div id="header">
+      <h1>8-bit Flappy Bird</h1>
+      <div id="score-block">Score: 0</div>
+    </div>
+
+    <div
+      id="content"
+      class="overlay">
+      <div id="gameContainer">
+        <!-- JS fills the div -->
+      </div>
+    </div>
+    <div class="overlay losing-message">
+      <p id="message"></p>
+      <p id="message2"></p>
+    </div>
+    <div class="instructions">
+      <p>Press 'Space' to start the game.</p>
+      <p style="margin: 0 0 0 40px">Press 'Esc' to pause the game.</p>
+    </div>
+  </body>
+</html>
